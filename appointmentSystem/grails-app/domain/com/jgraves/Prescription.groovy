@@ -7,15 +7,17 @@ int prescripNumber
 String medicine
 Double totalCost
 Date dateIssued
-Boolean patientPaying
+String patientPaying
+
+static hasMany=[doctors: Doctor, patients: Patient]
 
     static constraints = {
 
-pharmacyName blank:false
-prescripNumber blank:false, unique:true
-medicine blank:false
-totalCost blank:false, scale:3
-dateIssued blank:false
-patientPaying blank:false
+pharmacyName blank: false, nullable: false
+prescripNumber blank: false, nullable: false, unique: true
+medicine blank: false, nullable: false
+totalCost blank: false, nullable: false, scale: 2
+dateIssued blank: false, nullable: false
+patientPaying blank: false, nullable: false
     }
 }
