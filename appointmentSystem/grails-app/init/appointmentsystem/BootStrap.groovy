@@ -66,14 +66,90 @@ appDuration: '15',
 roomNumber: '2',
 ).save()
 
-def Appointment_2 = new Appointment(
-String patientName
-String patientAddress
-String patientResidence
-Date patientDob
-String patientID
-Date dateRegistered
-String patientPhone
+def Jordan_Graves = new Patient(
+
+patientName: 'Jordan Graves',
+patientAddress: '9 Langworth Junction',
+patientResidence: 'Langworth',
+patientDob: '02/12/1995',
+patientID: '3342',
+dateRegistered: '02/12/1995',
+patientPhone: '01623419882',
+).save()
+
+def Gregory_Thomas = new Patient(
+
+patientName: 'Gregory Thomas',
+patientAddress: 'Themes Lane',
+patientResidence: 'Themes',
+patientDob: '09/05/1999',
+patientID: '62',
+dateRegistered: '05/01/2005',
+patientPhone: '01623454499',
+).save()
+
+def Receptionist1 = new Receptionist(
+
+recepName: 'Pepper Potts',
+recepEmail: 'Potts4@gmail.com',
+recepUsername: 'Potts',
+recepPassword: 'Pepperpig',
+recepPhone: '0114555666',
+).save()
+
+def Receptionist2 = new Receptionist(
+
+recepName: 'Evelina',
+recepEmail: 'Lina@gmail.com',
+recepUsername: 'Evelina',
+recepPassword: 'russia',
+recepPhone: '0114545666',
+).save()
+
+def Nurse1 = new Nurse(
+
+nurseName: 'MrsAshbourne',
+nurseEmail: 'Ashbourne@slates.com',
+qualifications: 'Nursing Degree',
+nurseOffice: '221',
+nursePhone: '0774112334',
+
+).save()
+
+def Nurse2 = new Nurse(
+
+nurseName: 'Lucy',
+nurseEmail: 'lucyb@gmail.com',
+qualifications: 'Nursing Degree',
+nurseOffice: '24',
+nursePhone: '07743326794',
+
+).save()
+
+def Prescription1 = new Prescription(
+
+pharmacyName: 'Ladybrook Health Centre',
+prescripNumber: '334',
+medicine: 'Para',
+totalCost: '£4.99',
+dateIssued: '25/04/2017',
+patientPaying: 'Yes',
+
+).save()
+
+def Prescription2 = new Prescription(
+
+pharmacyName: 'Ladybrook Health Centre',
+prescripNumber: '335',
+medicine: 'Dojo',
+totalCost: '£43.99',
+dateIssued: '29/04/2017',
+patientPaying: 'Yes',
+
+).save()
+
+
+
 
     }
 

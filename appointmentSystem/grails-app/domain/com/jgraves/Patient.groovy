@@ -20,7 +20,7 @@ static hasMany=[surgeries: Surgery, doctors: Doctor]
 patientName blank: false, nullable: false
 patientAddress blank: false, nullable: false
 patientResidence blank: false, nullable: false
-pateintDob blank: false, nullable: false
+patientDob blank: false, nullable: false
 patientID blank: false, nullable: false, unique: true
 dateRegistered blank: false, nullable: false
 patientPhone blank: false, nullable: false	
